@@ -14,14 +14,13 @@ jobs:
       name: enoh
       path: enoh.txt
       retention-days: 10
-
- job_2:
- runs-on: windows-latest
- needs: job_1
- steps:
-- uses: actions/download-artifact@v
-  with:
-    name: enoh
-- run: |
-    cat enoh.txt
+  job_2:
+  runs-on: windows-latest
+  needs: job_1
+  steps:
+  - uses: actions/download-artifact@v
+    with:
+      name: enoh
+  - run: |
+      cat enoh.txt
    
