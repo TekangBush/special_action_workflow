@@ -14,7 +14,7 @@ jobs:
         id: pointer_variables
         run: | 
           echo "just perform this random task"
-          echo "::set-output var_instep=var1_name ::peter"
+          echo "::set-output name=var1_name ::peter"
       
 
 
