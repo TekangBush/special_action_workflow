@@ -4,7 +4,7 @@ on:
 
 jobs:
   ubuntu_default_env
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       run: env
 
