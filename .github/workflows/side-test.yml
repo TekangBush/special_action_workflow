@@ -1,0 +1,24 @@
+name: upload_and_download
+on:
+  push:
+  
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create a local file
+        run: echo "<h1>this is just to prove that we can create a file and upload as our artifacts in github and github will save this artifacts for a period of 90 days </h1>" >> enoh.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: enoh
+          path: enoh.txt
+          retention-days: 10
+  job_2:
+    runs-on: ubuntu-latest
+    needs: job_1
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: enoh
+      - run: |
+          cat enoh.txt
