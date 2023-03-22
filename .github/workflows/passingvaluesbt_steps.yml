@@ -4,11 +4,11 @@ on:
 
 jobs:
   step_deployment:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: create a variable and append
         run: |
-          echo "NAME1=it-works">> $GITHUB_ENV
+           echo "NAME1=works">> $GITHUB_ENV
       
       
       - name: create some variables
