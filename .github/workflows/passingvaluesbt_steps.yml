@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: create a variable and append
         run: |
-           echo "NAME1=works">> $GITHUB_ENV
+           echo "NAME1=IT_WORKS">> $GITHUB_ENV
       
       
       - name: create some variables
