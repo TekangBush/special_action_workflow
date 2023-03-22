@@ -1,7 +1,10 @@
 name: first workflow project
 on:
+/*
   push:
     branches: ["master"]
+    */
+    workflow_dispatch:
 jobs:
   build_release:
     runs-on:  ubuntu-latest

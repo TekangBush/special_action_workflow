@@ -1,0 +1,14 @@
+name: Dev_env
+on:
+  workflow_dispatch:
+
+
+jobs:
+  Dev_deployment:
+    runs-on: ubuntu-latest
+    environment:
+      name: DEV-ENVIRONMENT
+    steps:
+      - name: print the secret from the DEV-ENVIRONMENT
+        run: |
+          echo "DEV-TOP-SEC : ${{secrets.DEV_TOP_SEC}}"
