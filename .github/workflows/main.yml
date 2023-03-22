@@ -1,0 +1,15 @@
+name: first workflow project
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build_release:
+    runs-on:  ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: echo
+      run: echo "jesus is lord "
+    - name: echo a multiline
+      run: | 
+        echo "come to jesus and be safe"
+        echo "He is the only way "
