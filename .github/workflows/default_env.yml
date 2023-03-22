@@ -16,8 +16,8 @@ jobs:
     - name: A
       run: env
 
-  macOS_default_env:
-    runs-on: ubuntu
+  ubuntu_default_env:
+    runs-on: ubuntu-latest
     steps:
     - name: A
       run: env
