@@ -1,0 +1,24 @@
+name: step_by_step
+on: 
+  workflow_dispatch:
+
+jobs:
+  step_deployment:
+    runs-on: windows-latest
+    steps:
+      - name: create a variable and append
+        run: echo "get_value=it_works">> $GITHUB-ENV
+      
+      
+      - name: create some variables
+        id: pointer_variables
+        run: | 
+          echo "just perform this random task"
+          echo "::set-output var_instep=var1_name ::peter"
+      
+
+
+      - name: get the variables 
+        run: |
+          echo "passwd : ${{env.get_value}}"
+          echo "instep variable : ${{steps.pointer_variables.outputs.var1_name}}"
