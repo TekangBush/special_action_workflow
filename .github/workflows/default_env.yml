@@ -1,6 +1,6 @@
 name: list out the default env for the different OS
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   ubuntu_default_env:
