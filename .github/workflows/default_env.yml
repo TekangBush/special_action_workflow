@@ -3,13 +3,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  ubuntu_default_env:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Q
-      run: env
-
-
   windows_default_env:
     runs-on: windows-latest
     steps:
