@@ -6,16 +6,16 @@ jobs:
   ubuntu_default_env
     runs-on: ubuntu-latest
     steps:
-      run: env
+    - run: env
 
 
   windows_default_env
     runs_on: windows-latest
     steps:
-      run: env
+    - run: env
 
 
   macOS_default_env
     runs_on: macos-latest
     steps:
-      run: env
+    - run: env
