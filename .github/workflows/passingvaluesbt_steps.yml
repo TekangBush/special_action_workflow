@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: create a variable and append
         run: |
-          echo "value=it-works">> $GITHUB_ENV
+          echo "NAME1=it-works">> $GITHUB_ENV
       
       
       - name: create some variables
@@ -21,5 +21,5 @@ jobs:
 
       - name: get the variables 
         run: |
-          echo "value : ${{env.value}}"
+          echo "NAME1 : ${{env.NAME1}}"
           echo "instep variable : ${{steps.pointer_variables.outputs.var1_name}}"
