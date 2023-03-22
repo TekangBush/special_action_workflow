@@ -11,14 +11,14 @@ jobs:
 
 
   windows_default_env
-    runs_on: windows-latest
+    runs-on: windows-latest
     steps:
     - name: P
       run: env
 
 
   macOS_default_env
-    runs_on: macos-latest
+    runs-on: macos-latest
     steps:
     - name: A
       run: env
