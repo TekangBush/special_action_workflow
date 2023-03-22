@@ -1,7 +1,7 @@
 name: first workflow project
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 jobs:
   build_release:
     runs-on:  ubuntu-latest
