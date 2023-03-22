@@ -7,7 +7,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: create a variable and append
-        run: echo "value=it-works">> $GITHUB_ENV
+        run: |
+          echo "value=it-works >> $GITHUB_ENV
       
       
       - name: create some variables
