@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: create a variable and append
-        run: echo "get_value=it_works">> $GITHUB-ENV
+        run: echo "value=it_works">> $GITHUB-ENV
       
       
       - name: create some variables
@@ -20,5 +20,5 @@ jobs:
 
       - name: get the variables 
         run: |
-          echo "passwd : ${{env.get_value}}"
+          echo "passwd : ${{env.value}}"
           echo "instep variable : ${{steps.pointer_variables.outputs.var1_name}}"
