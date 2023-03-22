@@ -20,5 +20,5 @@ jobs:
 
       - name: get the variables 
         run: |
-          echo "passwd : ${{env.value}}"
+          echo "value : ${{env.value}}"
           echo "instep variable : ${{steps.pointer_variables.outputs.var1_name}}"
